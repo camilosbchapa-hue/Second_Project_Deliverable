@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Taller HTML Completo</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    margin:20px;
+    line-height:1.6;
+}
+
+header, nav, main, section, article, footer{
+    border:1px solid #ccc;
+    padding:10px;
+    margin:10px 0;
+}
+
+h1,h2{
+    color:#2c3e50;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table, th, td{
+    border:1px solid black;
+}
+
+th, td{
+    padding:10px;
+    text-align:center;
+}
+
+.menu-vertical{
+    width:200px;
+}
+
+.menu-vertical ul{
+    list-style:none;
+    padding:0;
+}
+
+.menu-vertical li{
+    background:#ddd;
+    margin:5px;
+    padding:10px;
+}
+
+.hero{
+    text-align:center;
+    background:#f4f4f4;
+    padding:40px;
+}
+
+.hero button{
+    padding:10px 20px;
+}
+
+.galeria img{
+    width:200px;
+    margin:10px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea{
+    width:100%;
+    padding:8px;
+    margin:5px 0;
+}
+
+.dashboard{
+    background:#f8f9fa;
+    padding:20px;
+}
+
+</style>
+
+</head>
+<body>
+
+<!-- EJERCICIO 1 -->
+<header>
+    <h1>Mi Blog</h1>
+</header>
+
+<nav>
+    <a href="#">Inicio</a> |
+    <a href="#">Noticias</a> |
+    <a href="#">Contacto</a>
+</nav>
+
+<main>
+
+<section>
+    <article>
+        <h2>Artículo 1</h2>
+        <p>Contenido del primer artículo.</p>
+    </article>
+
+    <article>
+        <h2>Artículo 2</h2>
+        <p>Contenido del segundo artículo.</p>
+    </article>
+</section>
+
+</main>
+
+<footer>
+    Derechos reservados © 2026
+</footer>
+
+<hr>
+
+<!-- EJERCICIO 2 -->
+<h1>Formulario Completo</h1>
+
+<form class="formulario">
+
+    <input type="text" placeholder="Nombre">
+
+    <input type="password" placeholder="Contraseña">
+
+    <input type="email" placeholder="Correo">
+
+    <input type="date">
+
+    <label>
+        <input type="radio" name="sexo">
+        Hombre
+    </label>
+
+    <label>
+        <input type="radio" name="sexo">
+        Mujer
+    </label>
+
+    <br><br>
+
+    <label>
+        <input type="checkbox">
+        Deportes
+    </label>
+
+    <label>
+        <input type="checkbox">
+        Música
+    </label>
+
+    <br><br>
+
+    <select>
+        <option>Bogotá</option>
+        <option>Medellín</option>
+        <option>Cali</option>
+    </select>
+
+    <textarea rows="5" placeholder="Comentarios"></textarea>
+
+</form>
+
+<hr>
+
+<!-- EJERCICIO 3 -->
+<h1>Horario Universitario</h1>
+
+<table>
+
+<tr>
+    <th>Hora</th>
+    <th>Lunes</th>
+    <th>Martes</th>
+    <th>Miércoles</th>
+</tr>
+
+<tr>
+    <td>8:00</td>
+    <td rowspan="2">HTML</td>
+    <td>CSS</td>
+    <td>Base de Datos</td>
+</tr>
+
+<tr>
+    <td>9:00</td>
+    <td>JavaScript</td>
+    <td>Programación</td>
+</tr>
+
+<tr>
+    <td>10:00</td>
+    <td colspan="3">DESCANSO</td>
+</tr>
+
+</table>
+
+<hr>
+
+<!-- EJERCICIO 4 -->
+<h1>Multimedia</h1>
+
+<img
+src="https://via.placeholder.com/300"
+alt="Imagen ejemplo">
+
+<br><br>
+
+<video controls width="300">
+    <source src="video.mp4" type="video/mp4">
+</video>
+
+<br><br>
+
+<audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<hr>
+
+<!-- EJERCICIO 5 -->
+<section class="hero">
+
+    <h1>Tech Startup</h1>
+
+    <p>
+        Impulsamos tu negocio con tecnología moderna.
+    </p>
+
+    <button>Comenzar</button>
+
+</section>
+
+<section>
+
+    <h2>Servicios</h2>
+
+    <article>
+        <h3>Desarrollo Web</h3>
+    </article>
+
+    <article>
+        <h3>Marketing Digital</h3>
+    </article>
+
+    <article>
+        <h3>Consultoría</h3>
+    </article>
+
+</section>
+
+<footer>
+    Startup © 2026
+</footer>
+
+<hr>
+
+<!-- EJERCICIO 6 -->
+<h1>Formulario con Validaciones</h1>
+
+<form>
+
+    <input
+        type="text"
+        required
+        maxlength="20"
+        placeholder="Usuario">
+
+    <br><br>
+
+    <input
+        type="number"
+        min="1"
+        max="100"
+        placeholder="Edad">
+
+    <br><br>
+
+    <input
+        type="text"
+        pattern="[A-Za-z]{3,10}"
+        placeholder="Solo letras">
+
+    <br><br>
+
+    <button>
+        Enviar
+    </button>
+
+</form>
+
+<hr>
+
+<!-- EJERCICIO 7 -->
+<h1>Iframe</h1>
+
+<h2>YouTube</h2>
+
+<iframe
+width="560"
+height="315"
+src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+allowfullscreen>
+</iframe>
+
+<br><br>
+
+<h2>Google Maps</h2>
+
+<iframe
+src="https://maps.google.com/maps?q=bogota&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="600"
+height="450">
+</iframe>
+
+<hr>
+
+<!-- EJERCICIO 8 -->
+<h1>Menú Vertical</h1>
+
+<div class="menu-vertical">
+
+<ul>
+
+<li><a href="#">Inicio</a></li>
+
+<li><a href="#">Usuarios</a></li>
+
+<li><a href="#">Configuración</a></li>
+
+<li><a href="#">Reportes</a></li>
+
+</ul>
+
+</div>
+
+<hr>
+
+<!-- EJERCICIO 9 -->
+<h1>Perfil Profesional</h1>
+
+<img
+src="https://via.placeholder.com/150"
+alt="Foto">
+
+<h2>Camilo Chaparro</h2>
+
+<h3>Experiencia</h3>
+
+<ul>
+<li>Desarrollador Web</li>
+<li>Técnico de Mantenimiento</li>
+</ul>
+
+<h3>Habilidades</h3>
+
+<ul>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+<li>SQL</li>
+</ul>
+
+<h3>Contacto</h3>
+
+<p>camilo@email.com</p>
+
+<h3>Redes Sociales</h3>
+
+<a href="#">LinkedIn</a> |
+<a href="#">GitHub</a>
+
+<hr>
+
+<!-- EJERCICIO 10 -->
+<h1>Portafolio Personal</h1>
+
+<nav>
+    <a href="#">Inicio</a> |
+    <a href="#">Proyectos</a> |
+    <a href="#">Contacto</a>
+</nav>
+
+<section>
+
+<h2>Presentación</h2>
+
+<p>
+Soy desarrollador Full Stack y estudiante de ADSO.
+</p>
+
+</section>
+
+<section>
+
+<h2>Proyectos</h2>
+
+<article>
+    Sistema de Ventas
+</article>
+
+<article>
+    Red Social para Mascotas
+</article>
+
+</section>
+
+<section class="galeria">
+
+<h2>Galería</h2>
+
+<img src="https://via.placeholder.com/200">
+
+<img src="https://via.placeholder.com/200">
+
+</section>
+
+<section>
+
+<h2>Contacto</h2>
+
+<form>
+
+<input type="text" placeholder="Nombre">
+
+<br><br>
+
+<input type="email" placeholder="Correo">
+
+<br><br>
+
+<textarea placeholder="Mensaje"></textarea>
+
+<br><br>
+
+<button>
+Enviar
+</button>
+
+</form>
+
+</section>
+
+<footer>
+Mi Portafolio © 2026
+</footer>
+
+<hr>
+
+<!-- MEGA RETO -->
+<h1>Mega Reto Final</h1>
+
+<div class="dashboard">
+
+<h2>Login</h2>
+
+<form>
+
+<input type="email" placeholder="Correo">
+
+<input type="password" placeholder="Contraseña">
+
+<button>Ingresar</button>
+
+</form>
+
+<h2>Registro</h2>
+
+<form>
+
+<input type="text" placeholder="Nombre">
+
+<input type="email" placeholder="Correo">
+
+<input type="password" placeholder="Contraseña">
+
+<button>Registrarse</button>
+
+</form>
+
+<h2>Dashboard</h2>
+
+<ul>
+<li>Usuarios</li>
+<li>Productos</li>
+<li>Configuración</li>
+</ul>
+
+<h2>Tabla de Usuarios</h2>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Nombre</th>
+<th>Correo</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Camilo</td>
+<td>camilo@email.com</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Usuario Demo</td>
+<td>demo@email.com</td>
+</tr>
+
+</table>
+
+<h2>Formulario de Contacto</h2>
+
+<form>
+
+<input type="text" placeholder="Nombre">
+
+<input type="email" placeholder="Correo">
+
+<textarea placeholder="Mensaje"></textarea>
+
+<br><br>
+
+<button>
+Enviar
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
